@@ -1,0 +1,190 @@
+header{
+    grid-area: header;
+    background-color: #e5383b;
+    color: white;
+    padding-top: 2%;
+    font-size: 20px;
+    font-family:'Silkscreen', cursive;
+    
+    
+    
+}
+ header a{
+    text-decoration: none;
+    color: white;
+  
+ }
+
+
+
+.fa-bars{
+    float: right;
+    padding-right: 5%;
+}
+
+header > ul{
+    display: none;
+    
+    
+}
+li{
+    padding-left: 10%;
+}
+#contenidoprincipal{
+    grid-area: principal;
+    
+}
+
+.uno{
+    background-color: #a5be00;
+    color: black;
+    text-align: center;
+    
+}
+
+.uno > p{
+    padding-bottom: 8px;
+    
+}
+
+.precio{
+    background-color: white;
+    width: 400px;
+    text-align: left;
+    border-radius: 5px;
+    height: 30px;
+
+}
+
+
+
+
+#paginas{
+padding-top: 50px;
+padding-left: 100px;
+    
+}
+
+.pagination a{
+    text-decoration: none;
+    color: black;
+}
+
+
+article{
+    display: none;
+    
+}
+
+.eli{
+    display: block;
+}
+
+
+
+
+    
+footer{
+    grid-area: footer;
+    background-color: #a5be00;
+    text-align: center;
+}
+
+
+
+
+
+
+
+main{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: "header"
+                         "principal"
+                         "footer"; 
+    grid-template-rows: 50px auto 50px;
+}
+
+
+article{
+    display: flexbox;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    padding-right: 45px;
+    
+   
+    
+}
+
+
+
+
+
+
+@media screen and (min-width: 576px) {
+    main {
+        display: grid;
+        min-height: 100vh;
+        grid-template-areas: "header principal"
+                             "header principal"
+                             "footer principal";
+
+        grid-template-columns: 200px auto;
+        grid-template-rows: auto auto 100px;
+    }
+header{
+    text-align: center;
+ 
+    
+}
+    
+header .fa-bars{
+    display: none;
+}
+
+    header > ul{
+        display: block;
+        text-decoration: none;
+        text-align: left;
+        padding-top: 20%;
+        
+    }
+
+    article{
+        display: inline-block;
+        
+        
+    }
+    .eli{
+        display: inline-block;
+    }
+    .precio{
+        background-color: white;
+        width: 800px;
+        text-align: left;
+        border-radius: 5px;
+        height: 30px;
+    
+    }
+    #paginas{
+        padding-top: 100px;
+        padding-left: 250px;
+            
+        }
+        
+        .pagination a{
+            text-decoration: none;
+            color: black;
+        }
+a{
+    text-decoration: none;
+   color: red;
+}
+        
+
+
+    
+    
+}
+
